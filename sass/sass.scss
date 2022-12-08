@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixins";
+
+
+
+
+/*SCSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: $fonts;
+}
+.border{
+    border: solid #9b9b9bad 2px;
+}
+header{
+    width: 100%;
+    background-color: #8ec4b2;
+}
+nav a:hover{
+    background-color: #c9c6c2;
+}
+.news img{
+    width: 100%;
+}
+footer{
+    text-align: center;
+}
+.textoProducto{
+    font-size: 1.5rem;
+} 
+.persona{
+    @include medidas (450px, 550px);
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    overflow: hidden;
+    img{
+        margin: 10px;
+        width: 400px;
+    }
+}
+.mapa iframe{
+    @include medidas (100%, 300px);
+}
+
+/*----------MEDIA QUERRIES----------*/
+@import "querries"

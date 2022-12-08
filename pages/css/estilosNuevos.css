@@ -1,0 +1,63 @@
+/*SCSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font: Arial, Helvetica, sans-serif #ffffff medium; }
+
+.border {
+  border: solid #9b9b9bad 2px; }
+
+header {
+  width: 100%;
+  background-color: #8ec4b2; }
+
+nav a:hover {
+  background-color: #c9c6c2; }
+
+.news img {
+  width: 100%; }
+
+footer {
+  text-align: center; }
+
+.textoProducto {
+  font-size: 1.5rem; }
+
+.persona {
+  width: 450px;
+  height: 550px;
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+  overflow: hidden; }
+  .persona img {
+    margin: 10px;
+    width: 400px; }
+
+.mapa iframe {
+  width: 100%;
+  height: 300px; }
+
+/*----------MEDIA QUERRIES----------*/
+@media only screen and (min-width: 768px) {
+  .news {
+    text-align: left; }
+    .news h1 {
+      text-align: left; }
+  /*NO ME FUNCIONA EL ALIGN LEFT Y NO SE POR QUE*/
+  .comments {
+    text-align: right; }
+    .comments h1 {
+      text-align: right; }
+  /*NO ME FUNCIONA EL ALIGN RIGHT Y NO SE POR QUE*/
+  .textoProducto {
+    font-size: 1.4rem; }
+  .mapa iframe {
+    height: 400px; } }
+
+@media only screen and (min-width: 992px) {
+  .mapa iframe {
+    height: 100%; } }
